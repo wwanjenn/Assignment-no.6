@@ -15,14 +15,27 @@ def fourNumbers():
     return firstNumberI, secondNumberI, thirdNumberI, fourthNumberI
 
 # 2 If else statement
-def firstNumber(firstIf, secondIf, thirdIf, fourthIf):
-    if firstIf >= secondIf and firstIf >= thirdIf and firstIf >= fourthIf:
-        firstNumberIf = firstIf
-    elif secondIf >= firstIf and secondIf >= thirdIf and secondIf >= fourthIf:
-        firstNumberIf = secondIf
-    elif thirdIf >= firstIf and thirdIf >= secondIf and thirdIf >= fourthIf:
-        firstNumberIf = thirdIf
-    elif fourthIf >= firstIf and fourthIf >= secondIf and fourthIf >= thirdIf:
-        firstNumberIf = fourthIf
+def firstNumber(firstIf1, secondIf1, thirdIf1, fourthIf1):
+    if firstIf1 >= secondIf1 and firstIf1 >= thirdIf1 and firstIf1 >= fourthIf1:
+        firstNumberIf = firstIf1
+    elif secondIf1 >= firstIf1 and secondIf1 >= thirdIf1 and secondIf1 >= fourthIf1:
+            firstNumberIf = secondIf1
+    elif thirdIf1 >= firstIf1 and thirdIf1 >= secondIf1 and thirdIf1 >= fourthIf1:
+            firstNumberIf = thirdIf1
+    else: 
+        firstNumberIf = fourthIf1
     return firstNumberIf
+
+def fourthNumber(firstIf4, secondIf4, thirdIf4, fourthIf4):
+    if firstIf4 <= secondIf4 and firstIf4 <= thirdIf4 and firstIf4 <= fourthIf4:
+        fourthNumberIf = firstIf4
+    elif secondIf4 <= firstIf4 and secondIf4 <= thirdIf4 and secondIf4 <= fourthIf4:
+            fourthNumberIf = secondIf4
+    elif thirdIf4 <= firstIf4 and thirdIf4 <= secondIf4 and thirdIf4 <= fourthIf4:
+            fourthNumberIf = thirdIf4
+    else: 
+        fourthNumberIf = fourthIf4
+    return fourthNumberIf
+
+
 # 3 print
