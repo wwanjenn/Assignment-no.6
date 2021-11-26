@@ -3,21 +3,28 @@
 # Let the user answer and evaluate if the user has the correct answer
 # The program will ask the user 10 addition operation
 # Display the result summary of the 10 operations (ex 9/10)
-
+import random
 # Steps
 print('Addition Operation Quiz')
 # 1 Generate random num Question, then ask for input
-def scoreTally(randomNumber1, randomNumber2, answer, score):
-    if randomNumber1 + randomNumber2 == answer:
-    scoreCurrent = score + 1
-    return scoreCurrent
+def scoreTally(answerQuestionT, randomNumber1T, randomNumber2T, scoreT):
+    if randomNumber1T + randomNumber2T == answerQuestionT:
+        scoreCurrentT = scoreT + 1
+    else:
+        scoreCurrentT = scoreT
+    return scoreCurrentT
 
-def additionQuestion(questionNum, randomNumber1, randomNumber2):
-    answerQuestion = input(f'{questionNum}. {randomNumber1} + {randomNumber2} = ')
-    return answerQuestion
+def additionQuestion(questionNumQ, randomNumber1Q, randomNumber2Q):
+    answerQuestionQ = int(input(f'{questionNumQ}. {randomNumber1Q} + {randomNumber2Q} = '))
+    return answerQuestionQ
 
-
-
-# 2 Generate random number and use it on Function additionQuestion() 
+# 2 Generate random number and use it on Function additionQuestion()
+"""No.1"""
+score = 0
+randomNumber1 = random.randint(0, 99)
+randomNumber2 = random.randint(0, 99)
+answerQuestion = additionQuestion('1', randomNumber1, randomNumber2)
+scoreCurrent = scoreTally(answerQuestion, randomNumber1, randomNumber2, score)
+print(scoreCurrent)
 # 3 Calculate Score
 # 4 Print
