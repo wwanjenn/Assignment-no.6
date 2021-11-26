@@ -17,8 +17,12 @@ def scoreTally(answerQuestionT, randomNumber1T, randomNumber2T, scoreT):
     return scoreCurrentT
 
 def additionQuestion(questionNumQ, randomNumber1Q, randomNumber2Q):
-    answerQuestionQ = int(input(f'{questionNumQ}. {randomNumber1Q} + {randomNumber2Q} = '))
-    return answerQuestionQ
+    while True:
+        try:
+            answerQuestionQ = int(input(f'{questionNumQ}. {randomNumber1Q} + {randomNumber2Q} = '))
+            return answerQuestionQ
+        except ValueError:
+            print('Please enter a Valid, Whole Number')
 
 def randomGenerate():
     randomNumber1G = random.randint(0, 99)
