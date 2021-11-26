@@ -5,7 +5,13 @@
 # Display the result summary of the 10 operations (ex 9/10)
 
 # Steps
-    
+print('Addition Operation Quiz')
 # 1 Generate random num Question, then ask for input
-# 2 Calculate Score
-# 3 Print
+def scoreTally(randomNumber1, randomNumber2, answer, score):
+    if randomNumber1 + randomNumber2 == answer:
+    scoreCurrent = score + 1
+    return scoreCurrent
+
+# 2 Generate random number and use it on Function additionQuestion() 
+# 3 Calculate Score
+# 4 Print
