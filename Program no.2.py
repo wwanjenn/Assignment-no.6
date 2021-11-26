@@ -12,6 +12,12 @@ def scoreTally(randomNumber1, randomNumber2, answer, score):
     scoreCurrent = score + 1
     return scoreCurrent
 
+def additionQuestion(questionNum, randomNumber1, randomNumber2):
+    answerQuestion = input(f'{questionNum}. {randomNumber1} + {randomNumber2} = ')
+    return answerQuestion
+
+
+
 # 2 Generate random number and use it on Function additionQuestion() 
 # 3 Calculate Score
 # 4 Print
