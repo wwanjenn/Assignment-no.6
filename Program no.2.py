@@ -10,8 +10,10 @@ print('Addition Operation Quiz')
 def scoreTally(answerQuestionT, randomNumber1T, randomNumber2T, scoreT):
     if randomNumber1T + randomNumber2T == answerQuestionT:
         scoreCurrentT = scoreT + 1
+        print('Correct')
     else:
         scoreCurrentT = scoreT
+        print('Wrong')
     return scoreCurrentT
 
 def additionQuestion(questionNumQ, randomNumber1Q, randomNumber2Q):
@@ -76,4 +78,5 @@ answerQuestion = additionQuestion('10', randomNumber1, randomNumber2)
 scoreCurrent = scoreTally(answerQuestion, randomNumber1, randomNumber2, scoreCurrent)
 
 # 3 Print
-print(scoreCurrent)
+
+print(f'Your score is: {scoreCurrent}/10')
