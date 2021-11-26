@@ -52,7 +52,31 @@ def secondNumber(firstIf2, secondIf2, thirdIf2, fourthIf2):
         secondNumberIf = fourthIf2
     return secondNumberIf
 
+def thirdNumber(firstIf3, secondIf3, thirdIf3, fourthIf3):
+    if firstIf3 >= secondIf3 and firstIf3 <= thirdIf3 and firstIf3 <= fourthIf3:
+        thirdNumberIf = firstIf3
+    elif firstIf3 <= secondIf3 and firstIf3 >= thirdIf3 and firstIf3 <= fourthIf3:
+        thirdNumberIf = firstIf3
+    elif firstIf3 <= secondIf3 and firstIf3 <= thirdIf3 and firstIf3 >= fourthIf3:
+        thirdNumberIf = firstIf3
 
+    if secondIf3 >= firstIf3 and secondIf3 <= thirdIf3 and secondIf3 <= fourthIf3:
+            thirdNumberIf = secondIf3
+    elif secondIf3 <= firstIf3 and secondIf3 >= thirdIf3 and secondIf3 <= fourthIf3:
+            thirdNumberIf = secondIf3
+    elif secondIf3 <= firstIf3 and secondIf3 <= thirdIf3 and secondIf3 >= fourthIf3:
+            thirdNumberIf = secondIf3
+    
+    if thirdIf3 >= firstIf3 and thirdIf3 <= secondIf3 and thirdIf3 <= fourthIf3:
+            thirdNumberIf = thirdIf3
+    elif thirdIf3 <= firstIf3 and thirdIf3 >= secondIf3 and thirdIf3 <= fourthIf3:
+            thirdNumberIf = thirdIf3
+    elif thirdIf3 <= firstIf3 and thirdIf3 <= secondIf3 and thirdIf3 >= fourthIf3:
+            thirdNumberIf = thirdIf3
+
+    else:
+        thirdNumberIf = fourthIf3
+    return thirdNumberIf
 
 def fourthNumber(firstIf4, secondIf4, thirdIf4, fourthIf4):
     if firstIf4 <= secondIf4 and firstIf4 <= thirdIf4 and firstIf4 <= fourthIf4:
