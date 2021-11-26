@@ -8,11 +8,16 @@
 # 1 Ask for 4 numbers
 def fourNumbers():
     print('Number Sorter')
-    firstNumberI = float(input('First Number: '))
-    secondNumberI = float(input('Second Number: '))
-    thirdNumberI = float(input('Third Number: '))
-    fourthNumberI = float(input('Fourth Number: '))
-    return firstNumberI, secondNumberI, thirdNumberI, fourthNumberI
+    while True:
+        try:
+            firstNumberI = float(input('First Number: '))
+            secondNumberI = float(input('Second Number: '))
+            thirdNumberI = float(input('Third Number: '))
+            fourthNumberI = float(input('Fourth Number: '))
+            return firstNumberI, secondNumberI, thirdNumberI, fourthNumberI
+        except ValueError:
+            print('Please Enter a Valid Number')
+    
 
 # 2 If else statement
 def firstNumber(firstIf1, secondIf1, thirdIf1, fourthIf1):
@@ -47,7 +52,7 @@ def secondNumber(firstIf2, secondIf2, thirdIf2, fourthIf2):
             secondNumberIf = thirdIf2
     elif thirdIf2 >= firstIf2 and thirdIf2 >= secondIf2 and thirdIf2 <= fourthIf2:
             secondNumberIf = thirdIf2
-            
+
     else: 
         secondNumberIf = fourthIf2
     return secondNumberIf
