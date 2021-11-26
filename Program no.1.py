@@ -89,5 +89,6 @@ def fourthNumber(firstIf4, secondIf4, thirdIf4, fourthIf4):
         fourthNumberIf = fourthIf4
     return fourthNumberIf
 
-
+def displayP(firstNumberP, secondNumberP, thirdNumberP, fourthNumberP):
+    print(f'The numbers from highest to lowest are {firstNumberP}, {secondNumberP}, {thirdNumberP}, {fourthNumberP}.')
 # 3 print
