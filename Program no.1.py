@@ -26,6 +26,34 @@ def firstNumber(firstIf1, secondIf1, thirdIf1, fourthIf1):
         firstNumberIf = fourthIf1
     return firstNumberIf
 
+def secondNumber(firstIf2, secondIf2, thirdIf2, fourthIf2):
+    if firstIf2 <= secondIf2 and firstIf2 >= thirdIf2 and firstIf2 >= fourthIf2:
+        secondNumberIf = firstIf2
+    elif firstIf2 >= secondIf2 and firstIf2 <= thirdIf2 and firstIf2 >= fourthIf2:
+        secondNumberIf = firstIf2
+    elif   firstIf2 >= secondIf2 and firstIf2 >= thirdIf2 and firstIf2 <= fourthIf2:
+        secondNumberIf = firstIf2
+    
+    if secondIf2 <= firstIf2 and secondIf2 >= thirdIf2 and secondIf2 >= fourthIf2:
+            secondNumberIf = secondIf2
+    elif secondIf2 >= firstIf2 and secondIf2 <= thirdIf2 and secondIf2 >= fourthIf2:
+            secondNumberIf = secondIf2
+    elif secondIf2 >= firstIf2 and secondIf2 >= thirdIf2 and secondIf2 <= fourthIf2:
+            secondNumberIf = secondIf2
+
+    if thirdIf2 <= firstIf2 and thirdIf2 >= secondIf2 and thirdIf2 >= fourthIf2:
+            secondNumberIf = thirdIf2
+    elif thirdIf2 >= firstIf2 and thirdIf2 <= secondIf2 and thirdIf2 >= fourthIf2:
+            secondNumberIf = thirdIf2
+    elif thirdIf2 >= firstIf2 and thirdIf2 >= secondIf2 and thirdIf2 <= fourthIf2:
+            secondNumberIf = thirdIf2
+    
+    else: 
+        secondNumberIf = fourthIf2
+    return secondNumberIf
+
+
+
 def fourthNumber(firstIf4, secondIf4, thirdIf4, fourthIf4):
     if firstIf4 <= secondIf4 and firstIf4 <= thirdIf4 and firstIf4 <= fourthIf4:
         fourthNumberIf = firstIf4
