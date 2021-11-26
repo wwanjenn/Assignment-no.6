@@ -34,20 +34,20 @@ def secondNumber(firstIf2, secondIf2, thirdIf2, fourthIf2):
     elif   firstIf2 >= secondIf2 and firstIf2 >= thirdIf2 and firstIf2 <= fourthIf2:
         secondNumberIf = firstIf2
     
-    if secondIf2 <= firstIf2 and secondIf2 >= thirdIf2 and secondIf2 >= fourthIf2:
+    elif secondIf2 <= firstIf2 and secondIf2 >= thirdIf2 and secondIf2 >= fourthIf2:
             secondNumberIf = secondIf2
     elif secondIf2 >= firstIf2 and secondIf2 <= thirdIf2 and secondIf2 >= fourthIf2:
             secondNumberIf = secondIf2
     elif secondIf2 >= firstIf2 and secondIf2 >= thirdIf2 and secondIf2 <= fourthIf2:
             secondNumberIf = secondIf2
 
-    if thirdIf2 <= firstIf2 and thirdIf2 >= secondIf2 and thirdIf2 >= fourthIf2:
+    elif thirdIf2 <= firstIf2 and thirdIf2 >= secondIf2 and thirdIf2 >= fourthIf2:
             secondNumberIf = thirdIf2
     elif thirdIf2 >= firstIf2 and thirdIf2 <= secondIf2 and thirdIf2 >= fourthIf2:
             secondNumberIf = thirdIf2
     elif thirdIf2 >= firstIf2 and thirdIf2 >= secondIf2 and thirdIf2 <= fourthIf2:
             secondNumberIf = thirdIf2
-    
+            
     else: 
         secondNumberIf = fourthIf2
     return secondNumberIf
@@ -60,20 +60,20 @@ def thirdNumber(firstIf3, secondIf3, thirdIf3, fourthIf3):
     elif firstIf3 <= secondIf3 and firstIf3 <= thirdIf3 and firstIf3 >= fourthIf3:
         thirdNumberIf = firstIf3
 
-    if secondIf3 >= firstIf3 and secondIf3 <= thirdIf3 and secondIf3 <= fourthIf3:
+    elif secondIf3 >= firstIf3 and secondIf3 <= thirdIf3 and secondIf3 <= fourthIf3:
             thirdNumberIf = secondIf3
     elif secondIf3 <= firstIf3 and secondIf3 >= thirdIf3 and secondIf3 <= fourthIf3:
             thirdNumberIf = secondIf3
     elif secondIf3 <= firstIf3 and secondIf3 <= thirdIf3 and secondIf3 >= fourthIf3:
             thirdNumberIf = secondIf3
     
-    if thirdIf3 >= firstIf3 and thirdIf3 <= secondIf3 and thirdIf3 <= fourthIf3:
+    elif thirdIf3 >= firstIf3 and thirdIf3 <= secondIf3 and thirdIf3 <= fourthIf3:
             thirdNumberIf = thirdIf3
     elif thirdIf3 <= firstIf3 and thirdIf3 >= secondIf3 and thirdIf3 <= fourthIf3:
             thirdNumberIf = thirdIf3
     elif thirdIf3 <= firstIf3 and thirdIf3 <= secondIf3 and thirdIf3 >= fourthIf3:
             thirdNumberIf = thirdIf3
-
+    
     else:
         thirdNumberIf = fourthIf3
     return thirdNumberIf
@@ -92,3 +92,15 @@ def fourthNumber(firstIf4, secondIf4, thirdIf4, fourthIf4):
 def displayP(firstNumberP, secondNumberP, thirdNumberP, fourthNumberP):
     print(f'The numbers from highest to lowest are {firstNumberP}, {secondNumberP}, {thirdNumberP}, {fourthNumberP}.')
 # 3 print
+
+firstNum, secondNum, thirdNum, fourthNum = fourNumbers()
+
+first = firstNumber(firstNum, secondNum, thirdNum, fourthNum)
+
+second = secondNumber(firstNum, secondNum, thirdNum, fourthNum)
+
+third = thirdNumber(firstNum, secondNum, thirdNum, fourthNum)
+
+fourth = fourthNumber(firstNum, secondNum, thirdNum, fourthNum)
+
+displayP(first, second, third, fourth)
