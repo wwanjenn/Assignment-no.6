@@ -18,13 +18,17 @@ def additionQuestion(questionNumQ, randomNumber1Q, randomNumber2Q):
     answerQuestionQ = int(input(f'{questionNumQ}. {randomNumber1Q} + {randomNumber2Q} = '))
     return answerQuestionQ
 
+def randomGenerate():
+    randomNumber1 = random.randint(0, 99)
+    randomNumber2 = random.randint(0, 99)
+    return randomNumber1, randomNumber2
 # 2 Generate random number and use it on Function additionQuestion()
-"""No.1"""
 score = 0
-randomNumber1 = random.randint(0, 99)
-randomNumber2 = random.randint(0, 99)
+"""No.1"""
 answerQuestion = additionQuestion('1', randomNumber1, randomNumber2)
 scoreCurrent = scoreTally(answerQuestion, randomNumber1, randomNumber2, score)
-print(scoreCurrent)
+
+
 # 3 Calculate Score
 # 4 Print
+print(scoreCurrent)
